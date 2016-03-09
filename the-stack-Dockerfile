@@ -1,0 +1,8 @@
+FROM ruby:latest
+
+RUN apt-get update
+RUN git clone https://github.com/kluong22/the-stack/
+WORKDIR /the-stack
+CMD ["./setup.sh"]
+
+EXPOSE 80
